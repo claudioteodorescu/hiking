@@ -4,20 +4,20 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* body {
   overflow: hidden;
 } */
 
-body,
-button {
+body {
   font-family: "Poppins", sans-serif;
 }
 
-button {
-  -webkit-user-select: none; /* Chrome all / Safari all */
-  -moz-user-select: none; /* Firefox all */
-  -ms-user-select: none; /* IE 10+ */
-  user-select: none; /* Likely future */
+a {
+  text-decoration: none;
 }
 
 nav {

@@ -1,4 +1,14 @@
+const exploreBtn = document.querySelector(".cta-btn");
 const tl = gsap.timeline({ defaults: { duration: 0.75, ease: "power3.out" } });
+
+// Scroll To Top
+if (history.scrollRestoration) {
+  history.scrollRestoration = "manual";
+} else {
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+}
 
 tl.fromTo(
   ".hiking",
